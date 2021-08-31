@@ -1,0 +1,171 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Такмак &mdash; Клуб Скалолазания</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img class="logo-img" src="img/logo.png" alt="Лого Такмак" />
+        </a>
+        <div class="logo-title">
+          <p class="logo-title-main">Такмак</p>
+          <p class="logo-title-secondary">Клуб скалолазания</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Новичкам</a></li>
+          <li><a class="main-nav-link" href="#">Вступить</a></li>
+          <li><a class="main-nav-link" href="#">Стоимость</a></li>
+          <li><a class="main-nav-link" href="#">Расписание</a></li>
+          <li><a class="main-nav-link" href="#">О нас</a></li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <ion-icon class="icon-nav" name="menu-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero-text-box">
+          <div class="hero-text-box-inner">
+            <h1 class="heading-primary">Навстречу новым впечатлениям</h1>
+            <a href="#" class="btn btn--full">
+              Вступить
+              <ion-icon
+                class="arrow-icon"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-img">
+          <img
+            class="hero-img"
+            src="img/hero.jpg"
+            alt="Веселая девушка висит, держась за веревку."
+          />
+        </div>
+      </section>
+
+      <section class="cta-multiple-section">
+        <div class="container grid grid--6-cols">
+          <figure class="cta-item">
+            <img src="img/first-visit.jpg" alt="Женщина взбирается на стену." />
+          </figure>
+          <figure class="cta-item">
+            <img
+              src="img/join-the-club.jpg"
+              alt="Мальчик спускается со стены, улыбаясь."
+            />
+          </figure>
+          <figure class="cta-item">
+            <img
+              src="img/yoga-classes.jpg"
+              alt="Группа людей занимается йогой."
+            />
+          </figure>
+          <figure class="cta-item">
+            <img src="img/shop.jpg" alt="Снаряжение для скалолазания." />
+          </figure>
+          <figure class="cta-item">
+            <img
+              src="img/travel.jpg"
+              alt="Группа путешественников после восхождения."
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="price-section">
+        <div class="container grid grid--2-cols">
+          <div class="pricing-plan pricing-plan--as-you-go">
+            <header class="plan-header">Разовое посещение</header>
+            <p class="list-title">В стоимость входят:</p>
+            <ul class="list">
+              <li>Посещение скалодрома</li>
+              <li>возможность прийти со своим тренером/инструктором</li>
+            </ul>
+            <p class="list-title">Цена на абонементы:</p>
+            <ul class="list">
+              <li class="list-item">
+                <span class="option">Вводное занятие (в группе до 6 человек)</span
+                ><span class="price">700 руб.</span>
+              </li class="list-item">
+              <li class="list-item">
+                <span class="option">Разовое посещение</span
+                ><span class="price">400 руб.</span>
+              </li>
+              <li class="list-item">
+                <span class="option">Персональное вводное занятие (1,5 часа)</span
+                ><span class="price">1500 руб.</span>
+              </li>
+              <li class="list-item">
+                <span class="option">Персональное вводное занятие для двоих </span
+                ><span class="price">2000 руб.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-plan pricing-plan--membership">
+            <header class="plan-header">Месячный абонемент</header>
+            <p class="list-title">В стоимость входят:</p>
+            <ul class="list">
+              <li>Посещение скалодрома</li>
+              <li>возможность прийти со своим тренером/инструктором</li>
+              <li>10% скидка в нашем магазине</li>
+              <li>25% скидка на аренду экипировки</li>
+            </ul>
+            <p class="list-title">Цена на абонементы:</p>
+            <ul class="list">
+              <li class="list-item">
+                <span class="option">5 занятий</span
+                ><span class="price">2000 руб.</span>
+              </li>
+              <li class="list-item">
+                <span class="option">10 занятий</span
+                ><span class="price">3600 руб.</span>
+              </li>
+              <li class="list-item">
+                <span class="option">20 занятий</span
+                ><span class="price">6800 руб.</span>
+              </li>
+              <li class="list-item">
+                <span class="option">Безлимит</span
+                ><span class="price">9000 руб.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

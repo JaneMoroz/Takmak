@@ -1,0 +1,174 @@
+/* *********************************** */
+/* HEADER */
+/* *********************************** */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo-img {
+  height: 9.4rem;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logo-title-main {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ec9a37;
+  letter-spacing: 0.75px;
+}
+
+.logo-title-secondary {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+}
+
+/* *********************************** */
+/* NAVIGATION */
+/* *********************************** */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #626a65;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #ec9a37;
+}
+
+.icon-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+/* *********************************** */
+/* HERO SECTION */
+/* *********************************** */
+
+.hero-text-box {
+  position: absolute;
+  /* In relation to parent size */
+  top: 50%;
+
+  /* In relation to element size */
+  transform: translate(3%, -30%);
+
+  z-index: 1;
+}
+
+.hero-img {
+  width: 100%;
+  position: relative;
+  margin-bottom: 9.6rem;
+}
+
+/* *********************************** */
+/* CTA SECTION */
+/* *********************************** */
+
+.cta-item {
+  grid-column: span 2;
+  overflow: hidden;
+}
+
+.cta-item:nth-of-type(4) {
+  grid-column: span 3;
+  justify-self: right;
+}
+
+.cta-item:nth-of-type(5) {
+  grid-column: span 3;
+  justify-self: left;
+}
+
+.cta-item img {
+  width: 38rem;
+  height: 38rem;
+}
+
+/* *********************************** */
+/* PRICE SECTION */
+/* *********************************** */
+
+.price-section {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  
+}
+
+.pricing-plan--as-you-go {
+  justify-self: end;
+  background: lightblue;
+  padding: 5rem;
+}
+
+.pricing-plan--membership {
+  background-color: #626A65;
+  color: #ffffff;
+  padding: 5rem;
+}
+
+.plan-header {
+  font-size: 3.6rem;
+  color: #ec9a37;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 4.8rem;
+}
+
+.list-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 4.8rem;
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
