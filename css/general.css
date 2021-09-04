@@ -74,6 +74,7 @@ body {
   max-width: 130rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .grid {
@@ -90,6 +91,10 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .grid--6-cols {
   grid-template-columns: repeat(6, 1fr);
 }
@@ -97,12 +102,12 @@ body {
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-  font-weight: 700;
   color: #ffffff;
   letter-spacing: -0.5px;
 }
 
 .heading-primary {
+  font-weight: 700;
   font-size: 8rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
@@ -110,40 +115,83 @@ body {
   text-transform: uppercase;
 }
 
+.heading-secondary {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.svg{
+  font-style: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.svg-text{
+  fill            : none;
+  stroke-width    : 2px;
+  stroke-linejoin : round;
+  animation       : 2s pulsate infinite;
+}
+
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   gap: 6.2rem;
   text-decoration: none;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   text-transform: uppercase;
-  padding: 3.2rem 3.2rem;
 
   transition: all 0.3s;
 }
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #EC9A37;
+  background-color: #ec9a37;
   color: #fff;
+  padding: 2.4rem 3.2rem;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  padding: 3.2rem 2.6rem 3.2rem 3.8rem;
+  padding: 2.4rem 2.6rem 2.4rem 3.8rem;
 }
 
-.btn--full:link > .arrow-icon,
-.btn--full:visited > .arrow-icon {
-  color: #ffffff;
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #ffffff;
+  border: 1px #626a65 solid;
+  color: #626a65;
+  padding: 2.4rem 2.4rem;
+}
 
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #626a65;
+  color: #ffffff;
+  padding: 2.4rem 2rem 2.4rem 2.8rem;
+}
+
+.btn--outline:hover.btn--outline--no-background-change,
+.btn--outline:active.btn--outline--no-background-change {
+  background-color: #ffffff;
+  color: #626a65;
+  padding: 2.4rem 2rem 2.4rem 2.8rem;
+}
+
+.btn:link > .arrow-icon,
+.btn:visited > .arrow-icon {
+  size: 100px;
   transition: all 0.3s;
 }
 
-.btn--full:hover > .arrow-icon,
-.btn--full:active > .arrow-icon {
-  color: #9DC7C7;
+.btn:hover > .arrow-icon,
+.btn:active > .arrow-icon {
+  color: #9dc7c7;
 }
 
-
+.line-icon {
+  color: aqua;
+}
