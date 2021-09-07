@@ -13,34 +13,94 @@
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <title>Такмак &mdash; Клуб Скалолазания</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <a href="#">
-          <img class="logo-img" src="img/logo.png" alt="Лого Такмак" />
-        </a>
-        <div class="logo-title">
-          <p class="logo-title-main">Такмак</p>
-          <p class="logo-title-secondary">Клуб скалолазания</p>
+      <div class="navigation-box">
+        <div class="logo">
+          <a href="#">
+            <img class="logo-img" src="img/logo.png" alt="Лого Такмак" />
+          </a>
+          <div class="logo-title">
+            <p class="logo-title-main">Такмак</p>
+            <p class="logo-title-secondary">Клуб скалолазания</p>
+          </div>
         </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">Новичкам</a></li>
+            <li><a class="main-nav-link" href="#">Вступить</a></li>
+            <li><a class="main-nav-link" href="#">Стоимость</a></li>
+            <li><a class="main-nav-link" href="#">Расписание</a></li>
+            <li><a class="main-nav-link" href="#">О нас</a></li>
+            <!-- <li>
+              <a href="#" class="main-nav-menu">
+                <ion-icon class="icon-nav" name="menu-outline"></ion-icon>
+              </a>
+            </li> -->
+          </ul>
+        </nav>
+
+        <button class="btn-additional-nav">
+          <ion-icon class="icon-additional-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-additional-nav" name="close-outline"></ion-icon>
+        </button>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </div>
 
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Новичкам</a></li>
-          <li><a class="main-nav-link" href="#">Вступить</a></li>
-          <li><a class="main-nav-link" href="#">Стоимость</a></li>
-          <li><a class="main-nav-link" href="#">Расписание</a></li>
-          <li><a class="main-nav-link" href="#">О нас</a></li>
-          <li>
-            <a href="#" class="main-nav-link">
-              <ion-icon class="icon-nav" name="menu-outline"></ion-icon>
-            </a>
-          </li>
-        </ul>
+      <nav class="additional-nav">
+        <div class="additional-nav--links">
+          <ul class="social-links">
+            <li>
+              <a class="social-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">Gift карты</a></li>
+            <li><a class="main-nav-link" href="#">Ковид-19</a></li>
+            <li><a class="main-nav-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+
+        <svg
+          class="mountain-contour--nav-top"
+          viewBox="0 0 381.00001 79.374999"
+          sodipodi:docname="mountain-contour-top.svg"
+        >
+          <path
+            style="
+              fill: #f0f0f0;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 0.443307px;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-opacity: 1;
+            "
+            d="M 381.15916,0.43268796 341.71312,21.889252 305.03521,15.578496 238.59994,26.306781 199.15411,16.209571 151.40403,26.306781 133.41129,19.36495 93.273644,42.083673 78.741044,40.821521 65.592513,35.14184 1.9259284,79.317157 0.54186093,0.43268796 Z"
+            id="path1325"
+          />
+        </svg>
       </nav>
     </header>
 
@@ -50,7 +110,7 @@
           <div class="hero-text-box">
             <div class="hero-text-box-inner">
               <h1 class="heading-primary">
-                Навстречу
+                <span class="heading-primary--first-word">Навстречу</span>
 
                 <svg
                   class="svg svg-heading-primary"
@@ -92,66 +152,46 @@
           <svg
             class="mountain-contour--hero"
             viewBox="0 0 381.00001 79.374999"
-            version="1.1"
-            id="svg1255"
-            inkscape:version="1.1 (c68e22c387, 2021-05-23)"
             sodipodi:docname="mountain-contour-bottom1.svg"
-            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg"
           >
-            <defs id="defs1252" />
-            <g inkscape:label="Слой 1" inkscape:groupmode="layer" id="layer1">
-              <path
-                style="
-                  fill: #f0f0f0;
-                  stroke: none;
-                  stroke-width: 0.264583px;
-                  stroke-linecap: butt;
-                  stroke-linejoin: miter;
-                  stroke-opacity: 1;
-                  fill-opacity: 1;
-                "
-                d="M -3.5498009,6.3107572 C 111.62152,59.557771 108.07172,61.13546 113.19921,59.952193 c 5.12749,-1.183267 39.44223,-11.83267 39.44223,-11.83267 l 78.88446,11.043825 63.10757,-29.581674 95.05577,42.203189 -4.33863,7.888446 H -2.3665339 Z"
-                id="path2850"
-              />
-            </g>
+            <path
+              style="
+                fill: #f0f0f0;
+                stroke: none;
+                stroke-width: 0.264583px;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-opacity: 1;
+                fill-opacity: 1;
+              "
+              d="M -3.5498009,6.3107572 C 111.62152,59.557771 108.07172,61.13546 113.19921,59.952193 c 5.12749,-1.183267 39.44223,-11.83267 39.44223,-11.83267 l 78.88446,11.043825 63.10757,-29.581674 95.05577,42.203189 -4.33863,7.888446 H -2.3665339 Z"
+              id="path2850"
+            />
           </svg>
 
           <svg
             class="mountain-contour--hero"
             viewBox="0 0 381.00001 79.374999"
-            version="1.1"
-            id="svg1255"
-            inkscape:version="1.1 (c68e22c387, 2021-05-23)"
             sodipodi:docname="mountain-contour-bottom2.svg"
-            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg"
           >
-            <defs id="defs1252" />
-            <g inkscape:label="Слой 1" inkscape:groupmode="layer" id="layer1">
-              <path
-                style="
-                  fill: #ffffff;
-                  stroke: none;
-                  stroke-width: 0.264583px;
-                  stroke-linecap: butt;
-                  stroke-linejoin: miter;
-                  stroke-opacity: 1;
-                  fill-opacity: 1;
-                "
-                d="M -2.7609563,70.207173 C 51.669324,54.035858 55.613547,58.768926 55.613547,58.768926 l 27.215141,8.677291 55.613552,-26.426295 26.03187,13.015936 78.88446,13.410359 47.72509,-38.258965 86.77291,50.486057 -382.9840602,-0.394422 3.1553786,-10.254981 z"
-                id="path3343"
-              />
-            </g>
+            <path
+              style="
+                fill: #ffffff;
+                stroke: none;
+                stroke-width: 0.264583px;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-opacity: 1;
+                fill-opacity: 1;
+              "
+              d="M -2.7609563,70.207173 C 51.669324,54.035858 55.613547,58.768926 55.613547,58.768926 l 27.215141,8.677291 55.613552,-26.426295 26.03187,13.015936 78.88446,13.410359 47.72509,-38.258965 86.77291,50.486057 -382.9840602,-0.394422 3.1553786,-10.254981 z"
+              id="path3343"
+            />
           </svg>
         </div>
       </section>
 
-      <section class="cta-multiple-section">
+      <section class="section-cta-multiple">
         <div class="container grid grid--6-cols">
           <figure class="cta-item">
             <div class="cta-item-image">
@@ -178,7 +218,10 @@
               <p class="cta-item-details-text">Начни свое восхождение!</p>
               <a
                 href="#"
-                class="btn btn--outline btn--outline--no-background-change"
+                class="
+                  btn btn--outline btn--outline--no-background-change
+                  remove-outline
+                "
               >
                 Новичкам
                 <ion-icon
@@ -201,7 +244,7 @@
                   height="60"
                   viewBox="0 0 300 60"
                 >
-                  <text class="svg-text svg-text--cta" x="50" y="35">
+                  <text class="svg-text svg-text--cta" x="0" y="35">
                     для всех
                   </text>
                 </svg>
@@ -216,7 +259,10 @@
               <p class="cta-item-details-text">Начни свой путь с нами!</p>
               <a
                 href="#"
-                class="btn btn--outline btn--outline--no-background-change"
+                class="
+                  btn btn--outline btn--outline--no-background-change
+                  remove-outline
+                "
               >
                 Записаться
                 <ion-icon
@@ -239,7 +285,7 @@
                   height="60"
                   viewBox="0 0 300 60"
                 >
-                  <text class="svg-text svg-text--cta" x="50" y="35">
+                  <text class="svg-text svg-text--cta" x="0" y="35">
                     Классы
                   </text>
                 </svg>
@@ -251,10 +297,13 @@
             </div>
 
             <div class="cta-item-details">
-              <p class="cta-item-details-text">Классы йоги возобновленны!</p>
+              <p class="cta-item-details-text">Классы йоги открыты!</p>
               <a
                 href="#"
-                class="btn btn--outline btn--outline--no-background-change"
+                class="
+                  btn btn--outline btn--outline--no-background-change
+                  remove-outline
+                "
               >
                 Расписание
                 <ion-icon
@@ -277,7 +326,7 @@
                   height="60"
                   viewBox="0 0 300 60"
                 >
-                  <text class="svg-text svg-text--cta" x="30" y="35">
+                  <text class="svg-text svg-text--cta" x="0" y="35">
                     в магазин
                   </text>
                 </svg>
@@ -289,7 +338,10 @@
               <p class="cta-item-details-text">Все для скалолазания!</p>
               <a
                 href="#"
-                class="btn btn--outline btn--outline--no-background-change"
+                class="
+                  btn btn--outline btn--outline--no-background-change
+                  remove-outline
+                "
               >
                 Купить
                 <ion-icon
@@ -327,7 +379,10 @@
               <p class="cta-item-details-text">Путешествуй с нами!</p>
               <a
                 href="#"
-                class="btn btn--outline btn--outline--no-background-change"
+                class="
+                  btn btn--outline btn--outline--no-background-change
+                  remove-outline
+                "
               >
                 Туры
                 <ion-icon
@@ -340,7 +395,7 @@
         </div>
       </section>
 
-      <section class="price-section">
+      <section class="section-price">
         <div class="container grid grid--2-cols">
           <div class="pricing-plan pricing-plan--as-you-go">
             <header class="plan-header">
@@ -357,15 +412,14 @@
               </svg>
             </header>
             <p class="list-title">В стоимость входят:</p>
-            <ul class="list list--short">
+            <ul class="list list--as-you-go">
               <li>Посещение скалодрома</li>
               <li>возможность прийти со своим тренером/инструктором</li>
             </ul>
             <p class="list-title">Цена:</p>
             <ul class="list list--as-you-go">
               <li class="list-item">
-                <span class="option"
-                  >Вводное занятие (в группе до 6 человек)</span
+                <span class="option">Вводное занятие в группе</span
                 ><span class="price">700 руб.</span>
               </li>
               <li class="list-item">
@@ -452,61 +506,41 @@
           <svg
             class="mountain-contour--video"
             viewBox="0 0 381.00001 79.374999"
-            version="1.1"
-            id="svg1255"
-            inkscape:version="1.1 (c68e22c387, 2021-05-23)"
             sodipodi:docname="mountain-contour-bottom1.svg"
-            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg"
           >
-            <defs id="defs1252" />
-            <g inkscape:label="Слой 1" inkscape:groupmode="layer" id="layer1">
-              <path
-                style="
-                  fill: #f0f0f0;
-                  stroke: none;
-                  stroke-width: 0.264583px;
-                  stroke-linecap: butt;
-                  stroke-linejoin: miter;
-                  stroke-opacity: 1;
-                  fill-opacity: 1;
-                "
-                d="M -3.5498009,6.3107572 C 111.62152,59.557771 108.07172,61.13546 113.19921,59.952193 c 5.12749,-1.183267 39.44223,-11.83267 39.44223,-11.83267 l 78.88446,11.043825 63.10757,-29.581674 95.05577,42.203189 -4.33863,7.888446 H -2.3665339 Z"
-                id="path2850"
-              />
-            </g>
+            <path
+              style="
+                fill: #f0f0f0;
+                stroke: none;
+                stroke-width: 0.264583px;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-opacity: 1;
+                fill-opacity: 1;
+              "
+              d="M -3.5498009,6.3107572 C 111.62152,59.557771 108.07172,61.13546 113.19921,59.952193 c 5.12749,-1.183267 39.44223,-11.83267 39.44223,-11.83267 l 78.88446,11.043825 63.10757,-29.581674 95.05577,42.203189 -4.33863,7.888446 H -2.3665339 Z"
+              id="path2850"
+            />
           </svg>
 
           <svg
             class="mountain-contour--video white-mountain"
             viewBox="0 0 381.00001 79.374999"
-            version="1.1"
-            id="svg1255"
-            inkscape:version="1.1 (c68e22c387, 2021-05-23)"
             sodipodi:docname="mountain-contour-bottom2.svg"
-            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg"
           >
-            <defs id="defs1252" />
-            <g inkscape:label="Слой 1" inkscape:groupmode="layer" id="layer1">
-              <path
-                style="
-                  fill: #ffffff;
-                  stroke: none;
-                  stroke-width: 0.264583px;
-                  stroke-linecap: butt;
-                  stroke-linejoin: miter;
-                  stroke-opacity: 1;
-                  fill-opacity: 1;
-                "
-                d="M -2.7609563,70.207173 C 51.669324,54.035858 55.613547,58.768926 55.613547,58.768926 l 27.215141,8.677291 55.613552,-26.426295 26.03187,13.015936 78.88446,13.410359 47.72509,-38.258965 86.77291,50.486057 -382.9840602,-0.394422 3.1553786,-10.254981 z"
-                id="path3343"
-              />
-            </g>
+            <path
+              style="
+                fill: #ffffff;
+                stroke: none;
+                stroke-width: 0.264583px;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-opacity: 1;
+                fill-opacity: 1;
+              "
+              d="M -2.7609563,70.207173 C 51.669324,54.035858 55.613547,58.768926 55.613547,58.768926 l 27.215141,8.677291 55.613552,-26.426295 26.03187,13.015936 78.88446,13.410359 47.72509,-38.258965 86.77291,50.486057 -382.9840602,-0.394422 3.1553786,-10.254981 z"
+              id="path3343"
+            />
           </svg>
 
           <div class="container">
@@ -611,36 +645,26 @@
         <svg
           class="mountain-contour--testimonials"
           viewBox="0 0 381.00001 79.374999"
-          version="1.1"
-          id="svg1255"
-          inkscape:version="1.1 (c68e22c387, 2021-05-23)"
           sodipodi:docname="mountain-contour-bottom2.svg"
-          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:svg="http://www.w3.org/2000/svg"
         >
-          <defs id="defs1252" />
-          <g inkscape:label="Слой 1" inkscape:groupmode="layer" id="layer1">
-            <path
-              style="
-                fill: #ffffff;
-                stroke: none;
-                stroke-width: 0.264583px;
-                stroke-linecap: butt;
-                stroke-linejoin: miter;
-                stroke-opacity: 1;
-                fill-opacity: 1;
-              "
-              d="M -2.7609563,70.207173 C 51.669324,54.035858 55.613547,58.768926 55.613547,58.768926 l 27.215141,8.677291 55.613552,-26.426295 26.03187,13.015936 78.88446,13.410359 47.72509,-38.258965 86.77291,50.486057 -382.9840602,-0.394422 3.1553786,-10.254981 z"
-              id="path3343"
-            />
-          </g>
+          <path
+            style="
+              fill: #ffffff;
+              stroke: none;
+              stroke-width: 0.264583px;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-opacity: 1;
+              fill-opacity: 1;
+            "
+            d="M -2.7609563,70.207173 C 51.669324,54.035858 55.613547,58.768926 55.613547,58.768926 l 27.215141,8.677291 55.613552,-26.426295 26.03187,13.015936 78.88446,13.410359 47.72509,-38.258965 86.77291,50.486057 -382.9840602,-0.394422 3.1553786,-10.254981 z"
+            id="path3343"
+          />
         </svg>
       </section>
 
       <section class="sign-up-section">
-        <div class="container">
+        <div class="container container--sign-up">
           <div class="sign-up-box">
             <h2 class="heading-secondary sign-up-title">
               Подпишись, чтобы быть в курсе <br />
@@ -657,30 +681,31 @@
                 </text>
               </svg>
             </h2>
+
             <form class="sign-up-form" action="#">
               <div>
                 <input
                   id="email"
                   type="email"
-                  placeholder="me@example.com"
+                  placeholder="адрес электронной почты"
                   required
                 />
               </div>
-            </form>
 
-            <button class="btn btn--sign-up">
-              Подписаться
-              <ion-icon
-                class="arrow-icon"
-                name="arrow-forward-outline"
-              ></ion-icon>
-            </button>
+              <button class="btn btn--sign-up">
+                Подписаться
+                <ion-icon
+                  class="arrow-icon"
+                  name="arrow-forward-outline"
+                ></ion-icon>
+              </button>
+            </form>
           </div>
         </div>
       </section>
 
       <footer class="footer">
-        <div class="container grid grid--footer">
+        <div class="container grid--footer">
           <div class="logo">
             <a href="#">
               <img class="logo-img" src="img/logo.png" alt="Лого Такмак" />
@@ -708,25 +733,26 @@
 
           <div class="footer-col">
             <p class="footer-col-title">Подпишись</p>
-            <p class="footer-col-details">
-              <ul class="social-links">
-            <li>
-              <a class="footer-link" href="#"
-                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a class="footer-link" href="#"
-                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a class="footer-link" href="#"
-                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
-              ></a>
-            </li>
-          </ul>
-            </p>
+            <ul class="social-links">
+              <li>
+                <a class="social-link" href="#"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="social-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="social-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </footer>
@@ -740,5 +766,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="js/script.js"></script>
   </body>
 </html>
