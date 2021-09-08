@@ -149,26 +149,18 @@
     padding: 2rem 2.2rem 2rem 2.6rem;
   }
 
-  /* MULTIPLE-SECTION */
+  /* MULTIPLE-CTA */
 
-  .heading-secondary {
-    font-size: 3rem;
+  .grid--6-cols {
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  .cta-item-details-text {
-    font-size: 3rem;
+  .cta-item:nth-of-type(4) {
+    grid-column: span 2;
   }
 
-  .btn--outline:link,
-  .btn--outline:visited {
-    padding: 1.6rem 1.6rem;
-  }
-
-  .btn--outline:hover,
-  .btn--outline:active {
-    background-color: #626a65;
-    color: #ffffff;
-    padding: 1.6rem 1.4rem 1.6rem 1.8rem;
+  .cta-item:nth-of-type(5) {
+    grid-column: 2 / span 2;
   }
 
   /* VIDEO */
@@ -227,7 +219,7 @@
 
   .btn-mobile-nav {
     display: block;
-    z-index: 1000;
+    z-index: 102;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -322,5 +314,242 @@
     display: block;
     margin-top: -2px;
     margin-left: -6px;
+  }
+
+  /* PRICE */
+
+  .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pricing-plan {
+    width: 80%;
+  }
+
+  .pricing-plan--as-you-go {
+    justify-self: center;
+    padding: 5rem;
+  }
+
+  .pricing-plan--membership {
+    justify-self: center;
+    padding: 5rem;
+  }
+
+  .list--as-you-go .list-item {
+    width: 40rem;
+  }
+
+  /* TESTIMONIALS */
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3.2rem;
+  }
+
+  /* SIGN-UP */
+
+  .container--sign-up {
+    padding: 0 4.8rem;
+  }
+
+  .svg-text--sign-up {
+    transform: translateX(-40%);
+  }
+
+  /* FOOTER */
+
+  .grid--footer {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2.4rem;
+  }
+
+  .footer .logo {
+    grid-row: 1 / span 2;
+  }
+}
+
+/* *********************************** */
+/* BELOW 704px (Smaller Tablets)*/
+/* *********************************** */
+
+@media (max-width: 44em) {
+  /* MULTIPLE CTA */
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .cta-item-details-text {
+    font-size: 3rem;
+  }
+
+  .btn--outline:link,
+  .btn--outline:visited {
+    padding: 1.6rem 1.6rem;
+  }
+
+  .btn--outline:hover,
+  .btn--outline:active {
+    background-color: #626a65;
+    color: #ffffff;
+    padding: 1.6rem 1.4rem 1.6rem 1.8rem;
+  }
+
+  /* PRICEING */
+
+  .list--as-you-go .list-item {
+    width: 35rem;
+  }
+
+  /* TESTIMONIALS */
+
+  .grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* *********************************** */
+/* BELOW 544px (Phones)*/
+/* *********************************** */
+
+@media (max-width: 34em) {
+  /* NAVIGATION */
+
+  .additional-nav {
+    top: 350%;
+    left: -5%;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .heading-primary--first-word {
+    line-height: 1;
+  }
+
+  .svg-heading-primary {
+    height: 4rem;
+  }
+
+  .svg-text-heading-primary {
+    transform: translateX(-100%);
+    font-size: 8rem;
+  }
+
+  /* MULTIPLE-CTA */
+
+  .grid--6-cols {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+  }
+
+  .cta-item:nth-of-type(4) {
+    grid-column: span 2;
+  }
+
+  .cta-item:nth-of-type(5) {
+    grid-column: span 2;
+  }
+
+  /* PRICE */
+
+  .pricing-plan--as-you-go .svg-text--plan {
+    transform: translateX(-10%);
+  }
+
+  .pricing-plan {
+    width: 70%;
+  }
+
+  .pricing-plan--as-you-go {
+    justify-self: start;
+    padding: 2.4rem;
+  }
+
+  .pricing-plan--membership {
+    justify-self: start;
+    padding: 2.4rem;
+  }
+
+  .list--as-you-go .list-item {
+    width: 25rem;
+  }
+
+  /* VIDEO */
+
+  .video-cover {
+    padding: 0 0;
+  }
+
+  .video-wrapper::before {
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 40px solid #ec9a37;
+  }
+
+  .video-wrapper::after {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  /* SIGN UP */
+
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+  }
+
+  .svg-text--sign-up {
+    font-size: 3rem;
+    transform: translateX(-58%);
+  }
+
+  .sign-up-form input,
+  .sign-up-form select {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .sign-up-form input::placeholder {
+    padding-left: 0;
+  }
+
+  .sign-up-form .btn {
+    gap: 1.2rem;
+    font-size: 1.6rem;
+    align-self: center;
+  }
+
+  .btn--sign-up {
+    background-color: #ffffff;
+    border: 1px #626a65 solid;
+    color: #626a65;
+    padding: 1.2rem;
+  }
+
+  .btn--sign-up:hover {
+    padding: 1.2rem 1rem 1.2rem 1.4rem;
+    cursor: pointer;
+  }
+
+  /* FOOTER */
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+  }
+
+  .footer .logo {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .footer-col {
+    gap: 1.6rem;
+    padding-top: 0;
   }
 }

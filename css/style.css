@@ -6,7 +6,7 @@
   /* Because we want header to be sticky later */
   height: 9.6rem;
   position: relative;
-  z-index: 2;
+
 }
 
 /* *********************************** */
@@ -109,13 +109,13 @@
 .additional-nav {
   position: absolute;
   width: 100%;
-  z-index: 3;
-
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 
   transition: all 0.5s ease-in;
+
+  z-index: 2;
 }
 
 .additional-nav-open {
@@ -182,8 +182,8 @@
   padding-top: 0;
   padding-bottom: 0;
   background-color: rgb(255, 255, 255, 0.97);
-  z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  z-index: 9999;
 }
 
 .sticky .section-hero {
@@ -280,8 +280,9 @@
   top: 5%;
   left: 8%;
   text-transform: uppercase;
-  z-index: 7;
   opacity: 1;
+
+  z-index: 1;
 }
 
 .cta-item:hover > .cta-item-details {
@@ -434,7 +435,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
   transition: all 0.4s;
 }
 
@@ -449,7 +449,6 @@
   width: 50rem;
   border-radius: 50%;
   border: 2px solid #ec9a37;
-  z-index: 20;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -667,6 +666,7 @@
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.4px;
+  line-height: 1.4;
 }
 
 .social-links {
