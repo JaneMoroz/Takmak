@@ -262,6 +262,15 @@
     margin-left: -6px;
   }
 
+  /* CTA */
+  .cta-item-details {
+    opacity: 1;
+  }
+
+  .cta-item-image {
+    opacity: 0.2;
+  }
+
   /* VIDEO */
 
   .video-box {
@@ -344,10 +353,10 @@
 
   /* VIDEO */
 
-.video-cover {
-  width: 100%;
-  padding: 0;
-}
+  .video-cover {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /* *********************************** */
@@ -359,7 +368,6 @@
   .navigation-box {
     padding: 1.6rem 1rem;
   }
-
 
   .heading-primary {
     font-size: 3.6rem;
