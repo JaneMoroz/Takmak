@@ -6,7 +6,8 @@
   /* Because we want header to be sticky later */
   height: 9.6rem;
   position: relative;
-
+  background-color: #ffffff;
+  z-index: 5;
 }
 
 /* *********************************** */
@@ -69,7 +70,7 @@
   background-color: #ec9a37;
   transform: scaleX(0);
   transform-origin: left;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 .main-nav-link:hover::after {
@@ -79,71 +80,6 @@
 .icon-nav {
   height: 4.8rem;
   width: 4.8rem;
-}
-
-/* *********************************** */
-/* ADITIONAL NAVIGATION */
-/* *********************************** */
-
-.btn-additional-nav {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.icon-additional-nav {
-  height: 4.8rem;
-  width: 4.8rem;
-  color: #626a65;
-  transition: all 0.3s;
-}
-
-.icon-additional-nav:hover {
-  color: #ec9a37;
-}
-
-.icon-additional-nav[name="close-outline"] {
-  display: none;
-}
-
-.additional-nav {
-  position: absolute;
-  width: 100%;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-
-  transition: all 0.5s ease-in;
-
-  z-index: 2;
-}
-
-.additional-nav-open {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-}
-
-
-.additional-nav-open .icon-additional-nav[name="menu-outline"] {
-  display: none;
-}
-
-.additional-nav-open .icon-additional-nav[name="close-outline"] {
-  display: block;
-}
-
-.additional-nav--links {
-  display: flex;
-  gap: 4.8rem;
-  padding: 3.2rem 4.8rem 0 9.6rem;
-  background-color: #f0f0f0;
-}
-
-.mountain-contour--nav-top {
-  display: block;
-  margin-top: -2px;
-  margin-left: -6px;
 }
 
 /* *********************************** */
@@ -196,6 +132,7 @@
 
 .section-hero {
   padding: 2.4rem 0 0 0;
+  height: 100vh;
 }
 
 .hero-box {
@@ -228,7 +165,10 @@
 }
 
 .hero-img {
+  /* width: 100%; */
+  height: 100vh;
   width: 100%;
+  object-fit: cover;
   opacity: 0.8;
 }
 
@@ -329,17 +269,24 @@
   padding: 9.6rem 0;
 }
 
+.pricing-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  column-gap: 3.2rem;
+  row-gap: 4.8rem;
+  justify-items: center;
+}
+
 .pricing-plan {
   width: 100%;
+  max-width: 50rem;
 }
 
 .pricing-plan--as-you-go {
-  justify-self: end;
   padding: 5rem;
 }
 
 .pricing-plan--membership {
-  justify-self: start;
   background-color: #626a65;
   color: #ffffff;
   padding: 5rem;
@@ -393,14 +340,6 @@
 
 .list--as-you-go.list::after {
   background-color: #626a65;
-}
-
-.list--as-you-go .list-item {
-  width: 45rem;
-}
-
-.list--membership .list-item {
-  width: 20rem;
 }
 
 .list-item {
