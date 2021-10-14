@@ -1,13 +1,11 @@
 console.log("Hello world!");
 
 // Make mobile navigation work
-const bodyEl = document.body;
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
-  bodyEl.classList.toggle("fixed-position");
 });
 
 // Sricky navigation
